@@ -19,7 +19,7 @@ export default class CoreApi extends Client {
       const params = new URLSearchParams({ id: id.toString() });
       response = await this.coreApiHttpClient.get(`${this.api}/get-by-id?${params}`);
     } catch (error) {
-      console.error(error);
+      //console.error(error);
     }
     return response;
   }
